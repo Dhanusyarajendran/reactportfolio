@@ -1,0 +1,80 @@
+.card 
+{
+       box-shadow: 2px 4px 8px rgb(185 170 170 / 50%) !important;
+    padding: 14px;
+    display: flex;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    cursor: pointer;
+    gap: 10px;
+  
+}
+
+.clamp-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;  
+   font-size: 20px;
+    line-height: 1.5;
+    color: rgb(228, 210, 210);
+}
+
+.text {
+  display: block;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media screen and (max-width:1012px){
+   .remove-display
+   {
+    display: block !important;
+   }
+   .remove-display img 
+   {
+    width: 100% !important;
+    height: 100% !important;
+   }
+}
+
+
+.remove-display
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+.recent-button {
+    margin: 0;
+    line-height: inherit;
+    /* background: #312d2d; */
+    /* color: #f30598; */
+    background: #312d2d  !important;
+     color: #f30598;
+    border: none;
+    font-size: 22px;
+    padding: 6px 20px;
+    border-radius: 10px;
+}
+.recent-button:hover 
+{
+    background: linear-gradient(to right, #4e6ad3, #ff5db5) !important;
+    color: white;
+}

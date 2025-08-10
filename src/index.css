@@ -1,0 +1,17 @@
+/* App.css or index.css */
+
+ #root{
+  background-color: black;
+  color: white;
+   padding:0px 60px !important; 
+  font-family:  Montserrat !important;
+  overflow: hidden !important;
+} 
+
+
+/* .container-fluid 
+{
+    background-color: black !important;
+   margin: 60px 0px !important;
+} */
+

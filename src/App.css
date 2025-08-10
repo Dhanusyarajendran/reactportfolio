@@ -1,0 +1,21 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+   /* background-color: black; */
+  overflow-x: hidden !important;
+
+}
+ body {
+  /* background-color: black; */
+  color: white;
+  font-weight: 700px !important;
+} 
+
+.container-fluid 
+{
+   padding:0px 60px !important; 
+}
+

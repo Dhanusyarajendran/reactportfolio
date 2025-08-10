@@ -1,0 +1,17 @@
+
+
+  .contact-box
+  {
+   
+    margin-left: 180px !important;
+    margin-right: 180px !important;
+        box-shadow: 0 0 15px 4px rgb(206 33 237 / 75%) !important;
+}
+
+   @media screen and (max-width:767px)
+ {
+ .contact-box{
+   margin-left: 0px !important;
+   margin-right: 0px !important;
+}
+ }

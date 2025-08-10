@@ -1,0 +1,154 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} 
+
+ .logo-img
+{
+    width: 36%;
+} 
+
+.navbar-navbar
+{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+.nav-link
+{
+    color: white !important;
+    font-size: 24px !important;
+    text-decoration: none !important;
+    outline: none !important;
+    font-weight: 500 !important;
+}
+.nav-link:last-child
+{
+    margin-right: 20px;
+}
+
+.nav-link:hover{
+  text-decoration: underline !important;
+  text-decoration-color: #f80677 !important;
+  text-underline-offset: 8px !important; /* Optional for spacing */
+}
+
+/* @media (max-width: 767.98px) {
+  .navbar-nav.ms-auto {
+    display: none;
+  }
+}  */
+
+
+
+/* Common styles */
+.navbar {
+  padding: 15px 20px;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+ 
+}
+
+.menu-toggle {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #fff;
+  display: none;
+  z-index: 999;
+}
+
+.flyout-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 740px;
+  height: 100vh;
+  background-color: #111;
+  color: white;
+  padding-top: 60px;
+  transition: right 0.3s ease;
+  z-index: 998;
+  display: none;
+}
+
+.flyout-menu ul {
+    list-style: none;
+    padding-left: 245px;
+    padding-top: 30px;
+}
+
+.flyout-menu li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.flyout-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.contact-button 
+{
+    margin-top: -12px !important;
+    line-height: inherit;
+    background: #312d2d;
+    color: #ff0069;
+    border: none;
+    font-size: 22px;
+    padding: 6px 20px;
+    border-radius: 10px;
+   background: linear-gradient(to right, #4e6ad3, #ff5db5);
+       color: white;
+}
+
+.contact-button:hover 
+{
+  background: #312d2d !important;
+  
+    color: #ff0069 !important;
+}
+
+
+
+
+/* Show only on small screens */
+@media (max-width: 1024px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .flyout-menu {
+    display: block;
+  }
+
+  .flyout-menu.open {
+    right: 0;
+  }
+  .navbar-nav.ms-auto.desktop-menu
+  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    flex-wrap: nowrap !important;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  
+  .hero-image img {
+    width: 100% !important;
+    height: 60vh !important;
+  }
+}
+
+
+

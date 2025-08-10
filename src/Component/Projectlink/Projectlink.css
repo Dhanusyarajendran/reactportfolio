@@ -1,0 +1,90 @@
+
+.box-box
+{
+  border: 2px solid rgb(32, 32, 32);
+  background: rgba(253, 249, 249, 0.918);
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(2, 2, 2, 0.15);
+  transition: all 0.3s ease;
+  color: black;
+  border-radius: 10px;
+}
+/* .box:hover 
+{ 
+  background: linear-gradient(to right, #4e6ad3, #ff5db5);
+  transform: translateY(-10px);
+} */
+
+.box-box h3
+{
+     font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+     /* margin-bottom: 16px !important; */
+}
+
+.box-box h4
+{
+     font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.box-box p{
+     font-size: 20px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0) !important;
+}
+
+/* Demo.css */
+
+
+.clamp-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3 !important; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.full-text {
+  display: block;
+}
+
+
+.card-design
+{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 6px;
+}
+
+a{
+    color: #384bdf !important;
+    font-size: 20px !important;
+    text-decoration: none !important;
+}
+
+
+.box-design
+{
+  border: 2px solid rgb(32, 32, 32);
+   background: linear-gradient(to right, #4e6ad3, #ff5db5) !important;
+  padding: 40px;
+  gap:40px; 
+   box-shadow: 0 4px 10px rgba(2, 2, 2, 0.15);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.box-design:hover 
+{ 
+  background: rgb(34, 33, 33);
+  transform: translateY(-10px);
+}
+
+
+@media screen and (max-width: 767px) {
+  .card-design {
+    display: block !important;
+  }
+}
