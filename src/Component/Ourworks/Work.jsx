@@ -3,7 +3,6 @@ import staticimg from "../../assets/static websites.jpg"
 import staticnew from "../../assets/staticnew.jpg"
 import webdevelopment from "../../assets/webdevelopment.jpeg"
 import ecommerce from "../../assets/ecomimages.png"
-import '../Ourworks/work.css'
 import './work.css'
 
 
