@@ -22,7 +22,9 @@ const contact=() =>{
     
                     <div className='pb-4'>
            
-                    <img src={linkedin} style={{ width: "7.5vh", height: "7.5vh",cursor:"pointer", marginTop:"4px" }} alt="linkedin" />
+                    <a href='www.linkedin.com/in/r-dhanushya' target='-blank'>
+                    <img src={linkedin} style={{ width: "7.5vh", height: "7.5vh",cursor:"pointer", marginTop:"4px" }} alt="linkedin" /></a>
+                    
                      <img src={whatsapp} style={{ width: "8.5vh", height: "8.5vh" ,cursor:"pointer" }} alt="whatsapp" />
                     <img src={github} style={{ width: "8vh", height: "8vh",cursor:"pointer" }} alt="GitHub" />
 
