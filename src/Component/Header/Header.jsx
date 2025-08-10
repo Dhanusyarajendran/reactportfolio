@@ -19,7 +19,7 @@ const Header = () =>{
           <div className="container-fluid">
             
             <div className="logo">
-               <img src={portfolio} className="logo-img" alt="logo"></img>
+             <a href="https://reactportfolio-pearl.vercel.app/"><img src={portfolio} className="logo-img" alt="logo"></img></a>
             </div>
 
          <button className="menu-toggle" onClick={toggleMenu}>
