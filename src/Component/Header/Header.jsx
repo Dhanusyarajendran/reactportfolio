@@ -40,13 +40,22 @@ const Header = () =>{
 
     {/* Mobile menu */}
     <div className={`flyout-menu ${isMobileMenuOpen ? "open" : ""}`}>
-      <ul className="mobile-menu"><li className="nav-item"><a href="#Home" className="nav-link">Home</a></li>
+      {/* <ul className="mobile-menu"><li className="nav-item"><a href="#Home" className="nav-link">Home</a></li>
       <li className="nav-item"><a href="#About" className="nav-link">About me</a></li>
       <li className="nav-item"><a href="#Service" className="nav-link">Services</a></li>
       <li className="nav-item"><a href="#Project" className="nav-link">Project</a></li>
       <li className="nav-item"><a href="#Latest" className="nav-link">Latest Work</a></li>
       <li className="nav-item"><a href="#Contact" className="nav-link"><button className="contact-button">Contact</button></a></li>
-      </ul>
+      </ul> */}
+
+      <ul className="mobile-menu">
+  <li className="nav-item"><a href="#Home" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home</a></li>
+  <li className="nav-item"><a href="#About" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About me</a></li>
+  <li className="nav-item"><a href="#Service" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Services</a></li>
+  <li className="nav-item"><a href="#Project" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Project</a></li>
+  <li className="nav-item"><a href="#Latest" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Latest Work</a></li>
+  <li className="nav-item"><a href="#Contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}><button className="contact-button">Contact</button></a></li>
+</ul>
     </div>
   </div>
 
