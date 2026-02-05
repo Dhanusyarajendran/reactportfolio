@@ -45,3 +45,11 @@ span.text-color
   height: 60vh;
   object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .hero-image img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+

@@ -24,10 +24,12 @@
 
 
    
- @media screen and (max-width:767px)
+ @media (max-width:768px)
  {
 .about-section{
-   flex-wrap: wrap;
+   display: block !important;
 }
  }
+
+
  

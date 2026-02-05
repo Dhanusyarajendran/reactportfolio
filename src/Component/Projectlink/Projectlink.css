@@ -83,7 +83,7 @@ a{
 }
 
 
-@media screen and (max-width: 767px) {
+@media (max-width: 768px) {
   .card-design {
     display: block !important;
   }
