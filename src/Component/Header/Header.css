@@ -4,8 +4,7 @@
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 } 
-
- .logo-img
+.logo-img
 {
     width: 36%;
 } 
@@ -35,7 +34,7 @@
   text-underline-offset: 8px !important; /* Optional for spacing */
 }
 
-/* @media (max-width: 767.98px) {
+/* @media (max-width: 767px) {
   .navbar-nav.ms-auto {
     display: none;
   }
@@ -64,8 +63,6 @@
 .flyout-menu {
   position: fixed;
   top: 0;
-  right: -100%;
-  width: 740px;
   height: 100vh;
   background-color: #111;
   color: white;
@@ -73,6 +70,8 @@
   transition: right 0.3s ease;
   z-index: 998;
   display: none;
+  width: 100%;
+  right: -100%;
 }
 
 .flyout-menu ul {
@@ -148,7 +147,20 @@
     width: 100% !important;
     height: 60vh !important;
   }
+  .flyout-menu ul {
+    list-style: none;
+    padding: 0px !important;
 }
+.logo-img {
+    width: 60%;
+}
+}
+
+
+
+
+
+
 
 
 

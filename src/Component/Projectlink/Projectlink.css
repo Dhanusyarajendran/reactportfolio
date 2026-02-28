@@ -87,4 +87,7 @@ a{
   .card-design {
     display: block !important;
   }
+  .box-design{
+    padding: 0px;
+  }
 }

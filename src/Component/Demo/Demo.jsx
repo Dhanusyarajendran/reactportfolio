@@ -12,7 +12,7 @@ const ReadMoreBox = ({title,text,img}) => {
 
   return (
 
-    <div className="box" style={{marginBottom:"80px"}} id="Service">
+    <div className="box" id="Service">
       <h3>{title}</h3>
       <p className={showFullText ? "full-text" : "clamp-text"}>{text}</p>
       <button className = "recent-button" onClick={() => setShowFullText(!showFullText)}>
@@ -53,8 +53,9 @@ const ReadMoreBox = ({title,text,img}) => {
 
    return (
     <div className="container-fluid">
-      <h2 className="text-center mb-5" style={{fontSize:"58px", fontWeight:"600", textTransform:"capitalize"}}>Services</h2>
-      <div className="d-flex gap-5">
+      <h2 className="service-content text-center mb-5">Services</h2>
+   <div className="d-flex flex-column flex-md-row gap-5">
+
       {data.map((item, index) => (
         <ReadMoreBox key={index} img={item.img} title={item.title} text={item.text} ></ReadMoreBox>
       ))

@@ -1,41 +1,81 @@
-.card
-{
-    display: flex;
-    margin:80px 0px !important;
-    gap: 60px;
+.service-title {
+  font-size: 52px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
-.card-content
-{
+/* Card Style */
+.card-content {
   border: 2px solid rgb(32, 32, 32);
   background: rgb(34, 33, 33);
-  padding: 40px;
-  gap:40px; 
-   box-shadow: 0 4px 10px rgba(2, 2, 2, 0.15);
+  padding: 40px 30px;
+  box-shadow: 0 4px 10px rgba(2, 2, 2, 0.15);
   border-radius: 20px;
   transition: all 0.3s ease;
+  height: 100%;
 }
 
-.card-content img{
-    fill: white !important;
+.card-content:hover {
+  transform: translateY(-10px);
+  background: #ff004f;
 }
-.card-content:hover 
-{
-    transform: translateY(-10px);
-    background: #ff004f;
 
+/* Icon */
+.service-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(0.95) contrast(0.9);
 }
+
+/* Heading */
 .card-content h3 {
-    font-size: 36px;
-    font-weight: 500;
-    text-transform: capitalize;
-    margin: 0px !important;
- }
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
 
-.card-content p{
-    font-size: 20px;
-    font-weight: 100;
-    line-height: 1.2;
-    color: rgb(228, 210, 210);
- }
+/* Paragraph */
+.card-content p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgb(228, 210, 210);
+}
+
+/* ================= MOBILE ================= */
+
+/* ================= MOBILE VIEW ================= */
+
+@media (max-width: 768px) {
+
+    .service-title{
+        font-size: 18px;
+    }
+
+  .row {
+    row-gap: 25px;
+  }
+
+  .card-content {
+    text-align: center;
+    padding: 25px 20px;
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  /* .card-content h3 {
+    font-size: 18px;
+  } */
+
+  .card-content p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+}
 

@@ -55,7 +55,7 @@ const  Work= ()=> {
 
   return (
     <div className='container-fluid ' style={{marginBottom:"80px"}} id="Project">
-    <h1 className='text-center text-capitalize mb-5' style={{fontSize:"56px", fontWeight:600}}>Projects</h1>
+    <h2 className='text-center text-capitalize mb-5' style={{fontSize:"56px", fontWeight:600}}>Projects</h2>
 
     <div className='d-flex gap-4 justify-content-center flex-wrap' >
       {visiblecards.map (item =>( 

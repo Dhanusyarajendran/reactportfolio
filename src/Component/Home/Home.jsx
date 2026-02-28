@@ -7,8 +7,8 @@ const Home = () =>{
     return(
       
         <div className="container-fluid" id="Home">
-        <div className="hero-section">
-           <div className="hero-content">
+        <div className="row hero-section">
+           <div className="col-md-6 hero-content">
            <h1 className="home-title">Hi, I am <span className="text-color">Dhanusya</span><br />
             Web Developer </h1>
             <h2> build responsive and interactive websites <br/> using modern web technologies.</h2>
@@ -17,12 +17,16 @@ const Home = () =>{
 </a>
 
            </div>
+           
 
-           <div className="hero-image">
+           <div className="col-md-6 hero-image">
               <img src={portfolioimage}  alt="banner-image"></img>
            </div>
         </div>
+
        </div>
+
+       
     )
 }
 

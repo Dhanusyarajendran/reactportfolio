@@ -78,7 +78,7 @@ I created the entire eCommerce structure from the ground up, including product p
 
    return (
     <div className="container-fluid ">
-      <h3 className="text-center mb-5" style={{fontSize:"36px", fontWeight:"600", textTransform:"capitalize",  color:"#f80677"}}>Project OverView</h3>
+      <h2 className="text-center mb-5" style={{fontSize:"56px", fontWeight:"600", textTransform:"capitalize"}}>Project OverView</h2>
       <div className="card-design" style={{marginBottom:"80px"}}>
       {data.map((item, index) => (
         <ReadMoreBox key={index}  title={item.title} tools={item.tools} text={item.text} url={item.url}></ReadMoreBox>

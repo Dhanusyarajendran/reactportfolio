@@ -51,3 +51,32 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.box {
+  margin-bottom: 80px;   /* Desktop */
+}
+
+.service-content{
+  font-size: 58px;
+  font-weight: 600;
+  text-transform: capitalize;;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .box {
+    margin-bottom: 40px;
+  }
+     .service-content {
+        font-size: 32px;
+        font-weight: 600;
+        text-transform: capitalize;
+        /* text-align: left !important; */
+        padding: 0px 18px;
+        margin-bottom: 30px !important;
+    }
+
+    .box h3 {
+    font-size: 26px;
+}
+}

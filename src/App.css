@@ -12,10 +12,26 @@
   /* background-color: black; */
   color: white;
   font-weight: 700px !important;
-} 
+  font-family: 'Poppins', sans-serif;
+}
+
+
 
 .container-fluid 
 {
    padding:0px 60px !important; 
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px !important;
+  }
+   h2 {
+        font-size: 32px !important;
+    }
+   h3 {
+        font-size: 26px !important;
+    }
 }
 

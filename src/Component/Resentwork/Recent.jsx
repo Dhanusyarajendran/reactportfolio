@@ -70,7 +70,7 @@ const rework = [
     <div className='container-fluid' id='Latest' style={{marginBottom:"120px"}}>
           <h2 className="text-center"style={{fontSize:"56px", fontWeight:600, textTransform:"capitalize"}}>Latest Work</h2>
           
-          <p className='text-center mt-4 px-5 mb-5' style={{fontSize:"20px", lineHeight:1.5, color:" rgb(228, 210, 210);", marginBottom:"30px"  }}>I recently started learning React as part of my journey into front-end development. React’s simple yet powerful component structure has helped me understand how to build reusable and dynamic user interfaces. I've practiced using JSX, props, and state while building beginner-level projects such as a personal portfolio, responsive cards, and a basic blog. Each day brings new learning opportunities, from working with APIs to handling navigation using React Router. This ongoing experience is shaping my development skills and preparing me to build real-world web applications confidently.
+          <p className='text-center mt-4 mb-5' style={{fontSize:"20px", lineHeight:1.5, color:" rgb(228, 210, 210);", marginBottom:"30px"  }}>I recently started learning React as part of my journey into front-end development. React’s simple yet powerful component structure has helped me understand how to build reusable and dynamic user interfaces. I've practiced using JSX, props, and state while building beginner-level projects such as a personal portfolio, responsive cards, and a basic blog. Each day brings new learning opportunities, from working with APIs to handling navigation using React Router. This ongoing experience is shaping my development skills and preparing me to build real-world web applications confidently.
 </p>
 
        <div className='container-fluid gap-3 remove-display'> 
