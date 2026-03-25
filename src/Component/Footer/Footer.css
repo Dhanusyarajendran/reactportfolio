@@ -1,0 +1,19 @@
+/* ===== Footer ===== */
+#Footer {
+    padding: 16px 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: rgb(210, 195, 195);
+    padding: 12px 0;
+}
+
+@media (max-width: 575px) {
+    .footer-text {
+        font-size: 13px;
+    }
+}

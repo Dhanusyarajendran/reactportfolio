@@ -1,83 +1,145 @@
-.card 
-{
-       box-shadow: 2px 4px 8px rgb(185 170 170 / 50%) !important;
-    padding: 14px;
+/* ===== Recent Work Section ===== */
+#Latest {
+    padding: 80px 0 100px;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+
+.section-subtitle {
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgb(228, 210, 210);
+    margin-bottom: 40px;
+}
+
+/* ===== Cards Grid ===== */
+.remove-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* ===== Card ===== */
+.card {
+    box-shadow: 2px 4px 8px rgb(185 170 170 / 40%) !important;
+    padding: 16px;
     display: flex;
+    flex-direction: column;
+    gap: 12px;
     background-color: rgb(31, 30, 30);
     color: white;
     cursor: pointer;
-    gap: 10px;
-  
+    border-radius: 10px;
 }
 
+/* ===== Card Image ===== */
+.recent-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* ===== Card Title ===== */
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+/* ===== Clamped Text ===== */
 .clamp-text {
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* Limit to 3 lines */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;  
-   font-size: 20px;
-    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    line-height: 1.6;
     color: rgb(228, 210, 210);
+    margin: 0;
 }
 
 .text {
-  display: block;
+    display: block;
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgb(228, 210, 210);
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateX(30px);
-  animation: fadeInUp 1s ease-in-out forwards;
-}
-
-
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-@media screen and (max-width:1012px){
-   .remove-display
-   {
-    display: block !important;
-   }
-   .remove-display img 
-   {
-    width: 100% !important;
-    height: 100% !important;
-   }
-   .clamp-text{
-    font-size: 18px !important;
-   }
-}
-
-
-.remove-display
-{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-
+/* ===== Show More Button ===== */
 .recent-button {
-    margin: 0;
-    line-height: inherit;
-    /* background: #312d2d; */
-    /* color: #f30598; */
-    background: #312d2d  !important;
-     color: #f30598;
+    background: #312d2d !important;
+    color: #f30598;
     border: none;
-    font-size: 22px;
-    padding: 6px 20px;
-    border-radius: 10px;
+    font-size: 15px;
+    padding: 7px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: all 0.2s ease;
 }
-.recent-button:hover 
-{
+
+.recent-button:hover {
     background: linear-gradient(to right, #4e6ad3, #ff5db5) !important;
     color: white;
+}
+
+/* ===== Fade Animation ===== */
+.fade-in {
+    opacity: 0;
+    transform: translateX(20px);
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Tablet (≤ 991px) ===== */
+@media (max-width: 991px) {
+    .remove-display {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .section-subtitle {
+        font-size: 15px;
+    }
+}
+
+/* ===== Mobile (≤ 575px) ===== */
+@media (max-width: 575px) {
+    #Latest {
+        padding: 50px 0 60px;
+    }
+
+    .remove-display {
+        grid-template-columns: 1fr;
+    }
+
+    .recent-img {
+        height: 200px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
 }

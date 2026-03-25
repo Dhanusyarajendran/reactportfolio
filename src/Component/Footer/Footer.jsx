@@ -1,16 +1,14 @@
 import React from "react";
+import '../Footer/Footer.css';
 
-const footer = () =>
-{
-    return(
+const Footer = () => {
+    return (
         <div className="container-fluid" id="Footer">
-        <footer className="text-center" style={{fontSize:"20px", fontWeight:"100",lineHeight:"1.2", color:" rgb(228, 210, 210);",
-    padding: "20px"}}>
-               © {new Date().getFullYear()} MySite. All rights reserved.
-        </footer>
+            <footer className="text-center footer-text">
+                © {new Date().getFullYear()} MySite. All rights reserved.
+            </footer>
         </div>
     );
-} 
+};
 
-export default footer; 
-
+export default Footer;

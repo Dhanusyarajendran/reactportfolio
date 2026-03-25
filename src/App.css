@@ -1,37 +1,22 @@
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-   /* background-color: black; */
-  overflow-x: hidden !important;
-
-}
- body {
-  /* background-color: black; */
+body {
   color: white;
-  font-weight: 700px !important;
   font-family: 'Poppins', sans-serif;
 }
 
-
-
-.container-fluid 
-{
-   padding:0px 60px !important; 
+#root {
+  background-color: black;
+  overflow-x: hidden;
 }
-
 
 @media (max-width: 768px) {
   body {
-    font-size: 16px !important;
+    font-size: 16px;
   }
-   h2 {
-        font-size: 32px !important;
-    }
-   h3 {
-        font-size: 26px !important;
-    }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 26px;
+  }
 }
-

@@ -1,84 +1,97 @@
-/* button.tab-button
-{
-    font-size: 18px;
+/* ===== Tab Container ===== */
+.tab {
+    margin: 0;
+    border: 2px solid #211a1a;
+    padding: 22px 20px 20px 20px;
+    height: auto;
+    box-shadow: 0 0 15px 4px rgba(206, 33, 237, 0.555) !important;
+}
+
+/* ===== Tab Buttons ===== */
+.tab-button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.tab-button button {
+    font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    position: relative;
-}  */
-
-.tab 
-{
-    margin: 0px;
-    border: 2px solid #211a1a;
-    padding: 24px 20px;
-    height: auto;
-    /* box-shadow: 0 4px 12px rgb(55 51 51) !important; */
-       box-shadow: 0 0 15px 4px rgba(206, 33, 237, 0.555) !important;
-
-    
-}
-button.tab-button 
-{
-    margin: 0px !important;
-    padding: 0px !important;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2a2a2a;
+    color: #ccc;
+    transition: all 0.2s ease;
 }
 
-.button {
-  background-color: #1a1a1a; /* Solid background color */
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgb(70 52 52 / 40%);
+.tab-button button.active,
+.tab-button button:hover {
+    background: linear-gradient(to right, #4e6ad3, #ff5db5);
+    color: #fff;
 }
 
-.progress-fill
-{
-   background: linear-gradient(to right, #4e6ad3, #ff5db5);
-    color: #fffdfd;
-    margin: 0px;
-    justify-content: flex-end;
-    display: flex;
-    flex-wrap: nowrap;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-} 
-
-
-.Education-content h2{
-    font-size: 20px !important ;
-    display: flex;
-    margin-bottom: 8px;
-    gap: 0;
-    color: #b54769;
-    text-transform: uppercase ;
-} 
-
-.exp-title,
-.edu-title {
-  color: #b54769;
-  text-transform: uppercase;
-  margin-bottom: 6px;
-}
-
+/* ===== Progress Bars ===== */
 .skill h6 {
-  margin-bottom: 5px;
-  font-weight: 500;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
 }
 
 .progress {
-  background-color: #2a2a2a;
-  border-radius: 20px;
-  overflow: hidden;
-  height: 22px;
+    background-color: #2a2a2a;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 20px;
 }
 
 .progress-fill {
-  background: linear-gradient(to right, #4e6ad3, #ff5db5);
-  color: white;
-  text-align: right;
-  padding-right: 10px;
-  line-height: 22px;
+    background: linear-gradient(to right, #4e6ad3, #ff5db5);
+    color: white;
+    font-size: 12px;
+    text-align: right;
+    padding-right: 8px;
+    line-height: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
+/* ===== Experience & Education ===== */
+.exp-title,
+.edu-title {
+    font-size: 14px;
+    color: #b54769;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    margin-top: 16px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
 
+.exp-title:first-child,
+.edu-title:first-child {
+    margin-top: 0;
+}
+
+.tab p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(210, 195, 195);
+    line-height: 1.6;
+    margin-bottom: 4px;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 991px) {
+    .tab {
+        padding: 16px;
+    }
+
+    .tab-button button {
+        font-size: 13px;
+        padding: 7px 16px;
+    }
+}

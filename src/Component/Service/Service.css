@@ -1,81 +1,122 @@
-.service-title {
-  font-size: 50px;
-  font-weight: 600;
-  text-transform: capitalize;
+/* ===== Services Section ===== */
+#Services {
+    padding: 80px 0 80px;
 }
 
-/* Card Style */
+/* Section Title — matches About/Contact heading scale */
+.service-title {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 40px !important;
+    line-height: 1.2;
+}
+
+/* ===== Card Grid Gap (scoped — does NOT affect other rows) ===== */
+.service-row {
+    row-gap: 28px;
+    column-gap: 0;
+}
+
+/* ===== Card ===== */
 .card-content {
-  border: 2px solid rgb(32, 32, 32);
-  background: rgb(34, 33, 33);
-  padding: 40px 30px;
-  box-shadow: 0 4px 10px rgba(2, 2, 2, 0.15);
-  border-radius: 20px;
-  transition: all 0.3s ease;
-  height: 100%;
+    border: 2px solid rgb(32, 32, 32);
+    background: rgb(34, 33, 33);
+    padding: 36px 30px;
+    box-shadow: 0 4px 16px rgba(2, 2, 2, 0.25);
+    border-radius: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .card-content:hover {
-  transform: translateY(-10px);
-  background: #ff004f;
+    transform: translateY(-8px);
+    background: #ff004f;
 }
 
 /* Icon */
 .service-icon {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 20px;
-  filter: brightness(0) invert(0.95) contrast(0.9);
+    width: 64px;
+    height: 64px;
+    display: block;
+    filter: brightness(0) invert(0.95) contrast(0.9);
 }
 
-/* Heading */
+/* Card heading — matches about-content h2 weight */
 .card-content h3 {
-  font-size: 26px;
-  font-weight: 500;
-  margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.3;
+    text-transform: capitalize;
 }
 
-/* Paragraph */
+/* Card text — same style as About p and Contact desc */
 .card-content p {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.6;
-  color: rgb(228, 210, 210);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: rgb(210, 195, 195);
+    margin: 0;
+    flex: 1;
 }
 
-/* ================= MOBILE ================= */
-
-/* ================= MOBILE VIEW ================= */
-
-@media (max-width: 768px) {
-
-    .service-title{
-        font-size: 18px;
+/* ===== Tablet (≤ 991px) ===== */
+@media (max-width: 991px) {
+    #Services {
+        padding: 50px 0 50px;
     }
 
-  .row {
-    row-gap: 25px;
-  }
+    .service-title {
+        font-size: 30px;
+    }
 
-  .card-content {
-    text-align: center;
-    padding: 25px 20px;
-  }
+    .card-content {
+        padding: 28px 22px;
+    }
 
-  .service-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
-  }
+    .card-content h3 {
+        font-size: 20px;
+    }
 
-  /* .card-content h3 {
-    font-size: 18px;
-  } */
-
-  .card-content p {
-    font-size: 18px;
-    line-height: 1.6;
-  }
-
+    .card-content p {
+        font-size: 15px;
+    }
 }
 
+/* ===== Mobile (≤ 575px) ===== */
+@media (max-width: 575px) {
+    #Services {
+        padding: 40px 0 40px;
+    }
+
+    .service-title {
+        font-size: 28px;
+        margin-bottom: 24px !important;
+    }
+
+    .card-content {
+        padding: 24px 18px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .service-icon {
+        width: 54px;
+        height: 54px;
+    }
+
+    .card-content h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .card-content p {
+        font-size: 14px;
+        line-height: 1.65;
+        text-align: center;
+    }
+}
