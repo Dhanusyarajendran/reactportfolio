@@ -18,7 +18,7 @@
 .nav-link
 {
     color: white !important;
-    font-size: 24px !important;
+    font-size: 22px !important;
     text-decoration: none !important;
     outline: none !important;
     font-weight: 500 !important;
@@ -93,7 +93,7 @@
 
 .contact-button 
 {
-    margin-top: 6px !important;
+    margin-top: -5px !important;
     line-height: inherit;
     background: #312d2d;
     color: #ff0069;

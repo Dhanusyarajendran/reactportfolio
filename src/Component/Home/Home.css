@@ -13,14 +13,14 @@
     width: 60%;
 }
  .hero-content h1{
-    font-size: 60px !important;
+    font-size: 56px !important;
     font-weight: 800 !important;
     line-height: 1.3em;
 } 
 
  .hero-content h2{
-    font-size: 30px !important;
-    font-weight: 600 !important;
+    font-size: 28px !important;
+    font-weight: 500 !important;
     text-transform: capitalize;
     margin-bottom: 30px;
     margin-top: 20px;
