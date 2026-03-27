@@ -21,6 +21,7 @@ const ReadMoreBox = ({ title, text, tools, url }) => {
 
 const ProjectOverview = () => {
     const data = [
+
         {
             title: `Static (WordPress)`,
             tools: `Tools: Elementor Page Builder, Plugins, Figma, HTML5, CSS3, SEO`,
@@ -58,20 +59,22 @@ const ProjectOverview = () => {
 
     return (
         <div className="container-fluid projectlink-section">
-            <h2 className="text-center projectlink-title">Project Overview</h2>
+            <h2 className="text-center projectlink-title" data-aos="fade-up">Project Overview</h2>
             <div className="card-design">
                 {data.map((item, index) => (
-                    <ReadMoreBox
-                        key={index}
-                        title={item.title}
-                        tools={item.tools}
-                        text={item.text}
-                        url={item.url}
-                    />
+                    <div key={index} data-aos="fade-up" data-aos-delay={index * 100}>
+                        <ReadMoreBox
+                            title={item.title}
+                            tools={item.tools}
+                            text={item.text}
+                            url={item.url}
+                        />
+                    </div>
                 ))}
             </div>
         </div>
     );
+
 };
 
 export default ProjectOverview;

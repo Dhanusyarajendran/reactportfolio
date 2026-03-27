@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className="container-fluid" id="Home">
             <div className="row align-items-center hero-section">
-                <div className="col-md-6 hero-content">
+                <div className="col-md-6 hero-content" data-aos="fade-right">
                     <h1 className="home-title">
                         Hi, I am <span className="text-color">Dhanusya</span><br />
                         Web Developer
@@ -17,13 +17,12 @@ const Home = () => {
                         <button className="explore-btn">Download Resume</button>
                     </a>
                 </div>
-
-                <div className="col-md-6 hero-image">
+                <div className="col-md-6 hero-image" data-aos="fade-left" data-aos-delay="150">
                     <img src={portfolioimage} className="hero-img" alt="banner-image" />
                 </div>
             </div>
         </div>
     );
-}
+};
 
 export default Home;

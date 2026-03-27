@@ -9,37 +9,21 @@ const Work = () => {
     const [showFullCard, setShowFullCard] = useState(false);
 
     const data = [
-        {
-            title: `STATIC WEBSITES`,
-            Tools: `Tools: WordPress, plugins, custom codes`,
-            img: staticnew,
-        },
-        {
-            title: `WEB DEVELOPMENT`,
-            Tools: `Tools: HTML, CSS, Bootstrap, JavaScript`,
-            img: webdevelopment,
-        },
-        {
-            title: `DYNAMIC WEBSITES`,
-            Tools: `Tools: WordPress, plugins, custom codes`,
-            img: staticimg,
-        },
-        {
-            title: `ECOMMERCE WEBSITES`,
-            Tools: `Tools: WordPress, plugins, custom codes`,
-            img: ecommerce,
-        },
+        { title: `STATIC WEBSITES`,    Tools: `Tools: WordPress, plugins, custom codes`, img: staticnew },
+        { title: `WEB DEVELOPMENT`,    Tools: `Tools: HTML, CSS, Bootstrap, JavaScript`,  img: webdevelopment },
+        { title: `DYNAMIC WEBSITES`,   Tools: `Tools: WordPress, plugins, custom codes`, img: staticimg },
+        { title: `ECOMMERCE WEBSITES`, Tools: `Tools: WordPress, plugins, custom codes`, img: ecommerce },
     ];
 
     const visiblecards = showFullCard ? data : data.slice(0, 2);
 
     return (
         <div className='container-fluid' id="Project">
-            <h2 className='text-center text-capitalize projects-title'>Projects</h2>
+            <h2 className='text-center text-capitalize projects-title' data-aos="fade-up">Projects</h2>
 
             <div className='projects-grid'>
-                {visiblecards.map(item => (
-                    <div className='project-card' key={item.title}>
+                {visiblecards.map((item, i) => (
+                    <div className='project-card' key={item.title} data-aos="zoom-in" data-aos-delay={i * 100}>
                         <img src={item.img} className="project-img" alt={item.title} />
                         <div className='project-title'>
                             <h3>{item.title}</h3>

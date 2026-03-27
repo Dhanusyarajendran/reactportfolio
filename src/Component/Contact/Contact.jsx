@@ -6,7 +6,7 @@ import linkedin from '../../assets/linkedin.png';
 const Contact = () => {
     return (
         <div className='container-fluid' id='Contact'>
-            <div className='text-center contact-box'>
+            <div className='text-center contact-box' data-aos="fade-up">
                 <h2 className="contact-title">Contact</h2>
                 <h3 className="contact-subtitle">Let's be awesome together!</h3>
 

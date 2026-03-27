@@ -6,7 +6,6 @@ import ecom from '../../assets/ecom.jpg';
 
 const ReadMoreBox = ({ text }) => {
     const [showFull, setShowFull] = useState(false);
-
     return (
         <div className='map'>
             <p className={showFull ? "text" : "clamp-text"}>{text}</p>
@@ -43,16 +42,16 @@ const Recent = () => {
 
     return (
         <div className='container-fluid' id='Latest'>
-            <h2 className="text-center section-title">Latest Work</h2>
-            <p className='text-center section-subtitle'>
+            <h2 className="text-center section-title" data-aos="fade-up">Latest Work</h2>
+            <p className='text-center section-subtitle' data-aos="fade-up" data-aos-delay="100">
                 I recently started learning React as part of my journey into front-end development. React's simple yet powerful component structure
                 has helped me understand how to build reusable and dynamic user interfaces. I've practiced using JSX, props, and state while building
                 beginner-level projects such as a personal portfolio, responsive cards, and a basic blog.
             </p>
 
             <div className='remove-display'>
-                {rework.map(item => (
-                    <div key={item.title}>
+                {rework.map((item, i) => (
+                    <div key={item.title} data-aos="fade-up" data-aos-delay={i * 100}>
                         <div className='card fade-in'>
                             <img src={item.img} className="recent-img" alt={item.title} />
                             <h3 className="card-title">{item.title}</h3>
